@@ -15,5 +15,6 @@
 @interface InventoryDataSource : NSObject
 
 - (void)loadDataWithBlock:(void (^)(NSArray *data, NSError *error))completion;
+- (NSArray *)loadData:(NSError **)error;
 
 @end
