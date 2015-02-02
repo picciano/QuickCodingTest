@@ -15,6 +15,7 @@
 @implementation UITableViewCell (Item)
 
 @dynamic item;
+NSOperationQueue *queue;
 
 - (void)setItem:(id)item {
     item = item;
@@ -31,8 +32,14 @@
 
 - (void)loadImageWithURLString:(NSString *)imageURLString {
     
-    dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
-    dispatch_async(backgroundQueue, ^{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        queue = [[NSOperationQueue alloc] init];
+    });
+    
+    [queue cancelAllOperations];
+    
+    [queue addOperationWithBlock:^{
         NSURL *imageURL = [NSURL URLWithString:imageURLString];
         NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
         UIImage *image = [UIImage imageWithData:imageData];
@@ -42,8 +49,7 @@
             self.imageView.image = image;
             [self setNeedsLayout];
         });
-        
-    });
+    }];
 }
 
 @end
