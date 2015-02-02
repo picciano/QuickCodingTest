@@ -14,7 +14,10 @@
 
 @interface InventoryDataSource : NSObject
 
+// asynchrously loads the inventory data and then calls the completion handler
 - (void)loadDataWithBlock:(void (^)(NSArray *data, NSError *error))completion;
+
+// synchronously loads the inventory data (used for unit testing)
 - (NSArray *)loadData:(NSError **)error;
 
 @end
