@@ -31,15 +31,39 @@
     [self.tableView registerClass:[InventoryTableViewCell class] forCellReuseIdentifier:INVENTORY_TABLE_VIEW_CELL];
     
     self.dataSource = [[InventoryDataSource alloc] init];
+    [self loadData];
+}
+
+- (void)loadData {
     [self.dataSource loadDataWithBlock:^(NSArray *data, NSError *error) {
         if (error) {
             NSLog(@"Error loading inventory data: %@", error);
+            [self displayError:error];
         } else {
             self.items = data;
             [self.tableView reloadData];
         }
     }];
 }
+
+- (void)displayError:(NSError *)error {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error loading inventory"
+                                                                   message:[NSString stringWithFormat:@"There was an error loading the inventory data. Be sure that you are connected to the Internet and try again. This message was returned: %@", error.description]
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"Try again"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+                                                              [self loadData];
+                                                          }];
+    UIAlertAction *giveUpAction = [UIAlertAction actionWithTitle:@"Give up"
+                                                            style:UIAlertActionStyleDefault
+                                                         handler:nil];
+    [alert addAction:defaultAction];
+    [alert addAction:giveUpAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+#pragma - UITableViewDataSource and UITableViewDelegate methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.items.count;

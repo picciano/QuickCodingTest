@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#define DATA_SOURCE_FIELD_AUTHOR @"author"
-#define DATA_SOURCE_FIELD_IMAGE_URL @"imageURL"
-#define DATA_SOURCE_FIELD_TITLE @"title"
+#define DATA_SOURCE_FIELD_AUTHOR        @"author"
+#define DATA_SOURCE_FIELD_IMAGE_URL     @"imageURL"
+#define DATA_SOURCE_FIELD_TITLE         @"title"
 
 @interface InventoryDataSource : NSObject
 

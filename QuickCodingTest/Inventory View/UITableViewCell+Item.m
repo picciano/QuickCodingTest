@@ -21,7 +21,11 @@
     
     self.textLabel.text = item[DATA_SOURCE_FIELD_TITLE];
     self.detailTextLabel.text = item[DATA_SOURCE_FIELD_AUTHOR];
+    
+    // load image to serve as placeholder while product image loads in background
     self.imageView.image = [StyleKit imageOfLoadingIconWithFrame:LOADING_IMAGE_ICON_FRAME];
+    
+    // load the product image
     [self loadImageWithURLString:item[DATA_SOURCE_FIELD_IMAGE_URL]];
 }
 
