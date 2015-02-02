@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  InventoryViewController.h
 //  QuickCodingTest
 //
 //  Created by Anthony Picciano on 2/2/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface InventoryViewController : UIViewController <UITabBarControllerDelegate, UITableViewDataSource>
 
 @end
-

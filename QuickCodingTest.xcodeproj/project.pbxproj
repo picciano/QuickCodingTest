@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		AF52BE661A7FB02F00F47492 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52BE651A7FB02F00F47492 /* main.m */; };
 		AF52BE691A7FB02F00F47492 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52BE681A7FB02F00F47492 /* AppDelegate.m */; };
-		AF52BE6C1A7FB02F00F47492 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52BE6B1A7FB02F00F47492 /* ViewController.m */; };
-		AF52BE6F1A7FB02F00F47492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF52BE6D1A7FB02F00F47492 /* Main.storyboard */; };
 		AF52BE711A7FB02F00F47492 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF52BE701A7FB02F00F47492 /* Images.xcassets */; };
 		AF52BE741A7FB02F00F47492 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF52BE721A7FB02F00F47492 /* LaunchScreen.xib */; };
 		AF52BE801A7FB02F00F47492 /* QuickCodingTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52BE7F1A7FB02F00F47492 /* QuickCodingTestTests.m */; };
+		AF52BE8C1A7FB0A500F47492 /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52BE8A1A7FB0A500F47492 /* InventoryViewController.m */; };
+		AF52BE8D1A7FB0A500F47492 /* InventoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF52BE8B1A7FB0A500F47492 /* InventoryView.xib */; };
+		AF52BE921A7FB63400F47492 /* InventoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52BE911A7FB63400F47492 /* InventoryTableViewCell.m */; };
+		AF52BE981A7FBE2F00F47492 /* UITableViewCell+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52BE971A7FBE2F00F47492 /* UITableViewCell+Item.m */; };
+		AF52BEA41A7FCA3B00F47492 /* StyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52BEA31A7FCA3B00F47492 /* StyleKit.m */; };
+		AF52BEA81A7FCD3900F47492 /* InventoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52BEA71A7FCD3900F47492 /* InventoryDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,22 @@
 		AF52BE651A7FB02F00F47492 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF52BE671A7FB02F00F47492 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF52BE681A7FB02F00F47492 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AF52BE6A1A7FB02F00F47492 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AF52BE6B1A7FB02F00F47492 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AF52BE6E1A7FB02F00F47492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF52BE701A7FB02F00F47492 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF52BE731A7FB02F00F47492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AF52BE791A7FB02F00F47492 /* QuickCodingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCodingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF52BE7E1A7FB02F00F47492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF52BE7F1A7FB02F00F47492 /* QuickCodingTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickCodingTestTests.m; sourceTree = "<group>"; };
+		AF52BE891A7FB0A500F47492 /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryViewController.h; path = "Inventory View/InventoryViewController.h"; sourceTree = "<group>"; };
+		AF52BE8A1A7FB0A500F47492 /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryViewController.m; path = "Inventory View/InventoryViewController.m"; sourceTree = "<group>"; };
+		AF52BE8B1A7FB0A500F47492 /* InventoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InventoryView.xib; path = "Inventory View/InventoryView.xib"; sourceTree = "<group>"; };
+		AF52BE901A7FB63400F47492 /* InventoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryTableViewCell.h; path = "Inventory View/InventoryTableViewCell.h"; sourceTree = "<group>"; };
+		AF52BE911A7FB63400F47492 /* InventoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryTableViewCell.m; path = "Inventory View/InventoryTableViewCell.m"; sourceTree = "<group>"; };
+		AF52BE961A7FBE2F00F47492 /* UITableViewCell+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+Item.h"; path = "Inventory View/UITableViewCell+Item.h"; sourceTree = "<group>"; };
+		AF52BE971A7FBE2F00F47492 /* UITableViewCell+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+Item.m"; path = "Inventory View/UITableViewCell+Item.m"; sourceTree = "<group>"; };
+		AF52BEA21A7FCA3B00F47492 /* StyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleKit.h; sourceTree = "<group>"; };
+		AF52BEA31A7FCA3B00F47492 /* StyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleKit.m; sourceTree = "<group>"; };
+		AF52BEA61A7FCD3900F47492 /* InventoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryDataSource.h; path = "Data Source/InventoryDataSource.h"; sourceTree = "<group>"; };
+		AF52BEA71A7FCD3900F47492 /* InventoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryDataSource.m; path = "Data Source/InventoryDataSource.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +95,9 @@
 			children = (
 				AF52BE671A7FB02F00F47492 /* AppDelegate.h */,
 				AF52BE681A7FB02F00F47492 /* AppDelegate.m */,
-				AF52BE6A1A7FB02F00F47492 /* ViewController.h */,
-				AF52BE6B1A7FB02F00F47492 /* ViewController.m */,
-				AF52BE6D1A7FB02F00F47492 /* Main.storyboard */,
+				AF52BEA51A7FCCF900F47492 /* Data Source */,
+				AF52BEA11A7FCA2400F47492 /* Style Kit - GENERATED CODE */,
+				AF52BE8E1A7FB0AA00F47492 /* Inventory View */,
 				AF52BE701A7FB02F00F47492 /* Images.xcassets */,
 				AF52BE721A7FB02F00F47492 /* LaunchScreen.xib */,
 				AF52BE631A7FB02F00F47492 /* Supporting Files */,
@@ -119,6 +131,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AF52BE8E1A7FB0AA00F47492 /* Inventory View */ = {
+			isa = PBXGroup;
+			children = (
+				AF52BE891A7FB0A500F47492 /* InventoryViewController.h */,
+				AF52BE8A1A7FB0A500F47492 /* InventoryViewController.m */,
+				AF52BE8B1A7FB0A500F47492 /* InventoryView.xib */,
+				AF52BE901A7FB63400F47492 /* InventoryTableViewCell.h */,
+				AF52BE911A7FB63400F47492 /* InventoryTableViewCell.m */,
+				AF52BE961A7FBE2F00F47492 /* UITableViewCell+Item.h */,
+				AF52BE971A7FBE2F00F47492 /* UITableViewCell+Item.m */,
+			);
+			name = "Inventory View";
+			sourceTree = "<group>";
+		};
+		AF52BEA11A7FCA2400F47492 /* Style Kit - GENERATED CODE */ = {
+			isa = PBXGroup;
+			children = (
+				AF52BEA21A7FCA3B00F47492 /* StyleKit.h */,
+				AF52BEA31A7FCA3B00F47492 /* StyleKit.m */,
+			);
+			name = "Style Kit - GENERATED CODE";
+			sourceTree = "<group>";
+		};
+		AF52BEA51A7FCCF900F47492 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				AF52BEA61A7FCD3900F47492 /* InventoryDataSource.h */,
+				AF52BEA71A7FCD3900F47492 /* InventoryDataSource.m */,
+			);
+			name = "Data Source";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +173,7 @@
 				AF52BE5C1A7FB02F00F47492 /* Sources */,
 				AF52BE5D1A7FB02F00F47492 /* Frameworks */,
 				AF52BE5E1A7FB02F00F47492 /* Resources */,
+				AF52BE8F1A7FB17100F47492 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,9 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF52BE6F1A7FB02F00F47492 /* Main.storyboard in Resources */,
 				AF52BE741A7FB02F00F47492 /* LaunchScreen.xib in Resources */,
 				AF52BE711A7FB02F00F47492 /* Images.xcassets in Resources */,
+				AF52BE8D1A7FB0A500F47492 /* InventoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +259,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF52BE8F1A7FB17100F47492 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REV=`git rev-list HEAD | wc -l`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $REV\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF52BE5C1A7FB02F00F47492 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF52BE6C1A7FB02F00F47492 /* ViewController.m in Sources */,
+				AF52BE921A7FB63400F47492 /* InventoryTableViewCell.m in Sources */,
+				AF52BEA81A7FCD3900F47492 /* InventoryDataSource.m in Sources */,
+				AF52BE981A7FBE2F00F47492 /* UITableViewCell+Item.m in Sources */,
 				AF52BE691A7FB02F00F47492 /* AppDelegate.m in Sources */,
 				AF52BE661A7FB02F00F47492 /* main.m in Sources */,
+				AF52BEA41A7FCA3B00F47492 /* StyleKit.m in Sources */,
+				AF52BE8C1A7FB0A500F47492 /* InventoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AF52BE6D1A7FB02F00F47492 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF52BE6E1A7FB02F00F47492 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF52BE721A7FB02F00F47492 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
